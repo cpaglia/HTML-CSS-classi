@@ -1,0 +1,96 @@
+/* Stile base per il corpo della pagina */
+* {
+  box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 10px;
+    margin: 0;	
+}
+
+/* Contenitore principale della ricetta */
+.ricetta-container {
+    width: 600px; /* Larghezza del contenitore */
+    margin: 20px auto; /* Centra il contenitore e aggiunge spazio verticale */
+    padding: 20px; /* Spazio interno attorno ai contenuti */
+    border: 2px solid #d2691e; /* Bordo arancione scuro */
+    background-color: #fff; /* Sfondo bianco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra per migliorare il design */
+}
+
+/* Titolo principale */
+.titolo {
+    text-align: center; /* Centra il titolo */
+    color: #d2691e; /* Colore del testo arancione scuro */
+    margin-bottom: 10px; /* Spazio sotto il titolo */
+}
+
+/* Contenitore dell'immagine */
+.immagine-container {
+    text-align: center; /* Centra l'immagine */
+    margin: 20px 0; /* Spazio verticale sopra e sotto l'immagine */
+}
+
+/* Immagine del piatto */
+.immagine {
+    width: 100%; /* Adatta l'immagine alla larghezza del contenitore */
+    height: auto; /* Mantiene le proporzioni */
+    max-width: 100%; /* Impedisce all'immagine di superare la larghezza del contenitore */
+    display: block; /* Rende l'immagine un elemento di blocco per evitare spazi extra */
+    margin: 0 auto; /* Centra l'immagine */
+    border-radius: 8px; /* Opzionale: aggiungi angoli arrotondati all'immagine */
+}
+
+/* Sezioni ingredienti e procedura */
+.sezione {
+    margin-bottom: 20px; /* Spazio tra le sezioni */
+    padding: 10px; /* Spazio interno della sezione */
+    border: 1px solid #ccc; /* Bordo grigio chiaro attorno alla sezione */
+    border-radius: 5px; /* Angoli arrotondati */
+    background-color: #f9f9f9; /* Colore di sfondo chiaro */
+}
+
+/* Sottotitolo delle sezioni */
+.sottotitolo {
+    color: #333; /* Colore del testo scuro */
+    border-bottom: 1px solid #d2691e; /* Linea sottile sotto il sottotitolo */
+    margin-bottom: 10px; /* Spazio sotto il sottotitolo */
+    padding-bottom: 5px; /* Spazio tra il testo e la linea di separazione */
+}
+
+/* Liste (puntate e numerate) */
+.lista {
+    padding-left: 30px; /* Spazio per allineare correttamente gli elementi */
+}
+
+/* Elementi della lista */
+.lista li {
+    margin-bottom: 5px; /* Spazio tra gli elementi della lista */
+}
+
+/* Stile responsivo per schermi piccoli */
+@media (max-width: 600px) {
+    .ricetta-container {
+        padding: 10px;
+		width:100%;
+    }
+
+    .titolo {
+        font-size: 1.5em;
+    }
+
+    .sottotitolo {
+        font-size: 1.2em;
+    }
+
+    .lista {
+        padding-left: 10px;
+    }
+
+    .immagine {
+        max-width: 100%; /* Adatta sempre l'immagine al viewport */
+        width: auto; /* Mantiene una dimensione relativa in base al contenitore */
+    }
+}
